@@ -1,1 +1,46 @@
-<p>register works!</p>
+<div class="row display-type">
+
+    <div class="header">
+        <h1>Welcome Learner!</h1>
+        <p>Ready for some quiz?</p>
+        <p>Let's start!!</p>
+    </div>
+
+    <div class="">
+        <div class="mycard">
+            <div class="quiz-registration-container">
+                <img src="/assets/image/pngegg.png" class="image">
+                <div class="registration-text">
+                    <h4>Registration</h4>
+                </div>
+            </div>
+            <div class="">
+                <form #registerForm="ngForm">
+                <div class="form-style">
+                    <div class="form-content1">
+                        <div>
+                            <i class="material-icons icon-style">account_circle</i>
+                            <label class="label-style">Name</label>
+                        </div>
+                        <input type="text" name="Name" #Name ngModel required>
+                    </div>
+                </div>
+                <div class="form-style">
+                    <div class="form-content2">
+                        <div>
+                            <i class="material-icons icon-style">mail_outline</i>
+                            <label class="label-style">Email</label>
+                        </div>
+                        <input type="text" name="Email" #Email ngModel required [pattern]="emailPattern">
+                    </div>
+                </div>
+                <div class="">
+                    <div class="">
+                    <button class="btn-large btn-submit" type="submit" [disabled]="!registerForm.valid">Start</button>
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

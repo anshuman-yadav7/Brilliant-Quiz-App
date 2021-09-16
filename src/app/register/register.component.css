@@ -1,0 +1,102 @@
+.display-type {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header {
+    color: #c1c1c1; 
+    font-family: 'Trocchi', serif; 
+    font-size: 50px; 
+    font-weight: normal; 
+    line-height: 48px; 
+    margin-right: 200px;
+    /* margin-left: 0px; */
+    /* box-shadow: 0 1px 2px white;
+    transition: box-shadow 0.3s ease-out; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header p {
+    font-size: 25px;
+}
+
+.header:hover {
+    /* color: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+    background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%); */
+     transform: scale(1.02);
+    /* box-shadow: 0 5px 15px rgba(0,0,0,0.3);  */
+}
+
+.mycard {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 100px;
+    height: 450px;
+    width: 450px;
+    /* transition-delay: 500ms; */
+    /* transition-timing-function: linear; */
+    background-color: #f7b42c;
+    background-image: linear-gradient(315deg, #f7b42c 0%, #fc575e 74%);
+}
+
+.mycard:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    /* transition:height 2s ease-out 2s; */
+    background-color: #fc5296;
+    background-image: linear-gradient(315deg, #fc5296 0%, #f67062 74%); 
+}
+
+.image {
+    height: 150px;
+    width: 150px;
+    mix-blend-mode: multiply;
+}
+
+.form-style {
+    color: white;
+}
+
+.form-content1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-content2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.label-style {
+    color: white;
+}
+
+input[type=text] {
+    color: white;
+    border-bottom: 1px solid #fff;
+    padding-left: 10px;
+}
+
+.registration-text {
+    color: #fff; 
+    font-family: 'Trocchi', serif; 
+    font-size: 25px; 
+    font-weight: normal; 
+    margin-top: 30px;
+}
+
+.quiz-registration-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
