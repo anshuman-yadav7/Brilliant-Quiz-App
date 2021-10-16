@@ -15,7 +15,7 @@
                 </div>
             </div>
             <div class="">
-                <form #registerForm="ngForm">
+                <form #registerForm="ngForm" (ngSubmit)="OnSubmit(Name.value, Email.value)">
                 <div class="form-style">
                     <div class="form-content1">
                         <div>
