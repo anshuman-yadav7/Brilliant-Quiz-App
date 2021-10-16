@@ -1,0 +1,37 @@
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fe5ce8be;
+    height: 60px;
+    position: fixed;
+    width: 100%;
+    border: 1px;
+}
+
+.nav-bar:hover {
+    background-color: #fe5ce8d2;
+}
+.logout {
+    margin-left: 1400px;
+    font-size: 20px;
+    background-color: #f757527e;
+    border-radius: 4px;
+}
+
+.logout:hover {
+    background-color: #f75852f1;
+}
+
+.quiz {
+    color: white;
+    font-size: 40px;
+    position: fixed;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    color: white;
+    text-decoration: none;
+}
