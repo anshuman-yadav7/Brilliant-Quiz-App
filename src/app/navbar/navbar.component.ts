@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { QuizService } from '../shared/quiz.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private quizService: QuizService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
+  Signout() {
+    localStorage.clear();
+    clearInterval(this.quizService.timer);
+    this.router.navigate(['/register']);
+  }
 }
