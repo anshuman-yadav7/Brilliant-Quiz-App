@@ -13,7 +13,7 @@ export class RegisterComponent implements OnInit {
   
   constructor(private quizService: QuizService, private route: Router) { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
   OnSubmit(name:string, email:string) {
@@ -21,9 +21,9 @@ export class RegisterComponent implements OnInit {
       (data:any) => {
         localStorage.clear();
         localStorage.setItem('participant', JSON.stringify(data));
-        this.route.navigate(['/quiz'])
+        this.route.navigate(['/quiz']);
       }
-    )
+    );
   }
 
 }

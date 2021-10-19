@@ -7,9 +7,17 @@ import { HttpClient } from '@angular/common/http';
 export class QuizService {
   // Properties
   readonly rootUrl = 'https://localhost:44393/';
+  qns!: any[];
+  seconds!: number;
+  timer!:any;
+  qnProgress!: number;
 
   // Helper methods
   constructor(private http: HttpClient) { }
+
+  displayTimeElasped() {
+    return Math.floor(this.seconds/3600) + ':' + Math.floor(this.seconds/60)+ ':' + Math.floor(this.seconds % 60) 
+  }
 
   // Http Methods
   insertParticipant(name: string, email: string) {
@@ -18,5 +26,9 @@ export class QuizService {
       Email: email
     }
     return this.http.post(this.rootUrl + '/api/InsertParticipant', body);
+  }
+
+  getQuestions() {
+    return this.http.get(this.rootUrl + '/api/Questions');
   }
 }
