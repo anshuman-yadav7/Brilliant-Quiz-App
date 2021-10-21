@@ -25,10 +25,10 @@
               </div>
             </div>
 
-            <div class="">
+            <div class="answer-container">
                 <ul class="collection answer">
                     <ng-container *ngFor="let option of quizService.qns[quizService.qnProgress].Options; let i = index">
-                        <li *ngIf="option != null" class="collection-item" (click)="Answer(quizService.qns[quizService.qnProgress].QuestionId,i)">
+                        <li *ngIf="option != null" class="collection-item button-55" (click)="Answer(quizService.qns[quizService.qnProgress].QuestionId,i)">
                             {{option}}
                         </li>
                     </ng-container>
