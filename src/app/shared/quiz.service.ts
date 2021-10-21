@@ -16,7 +16,7 @@ export class QuizService {
   constructor(private http: HttpClient) { }
 
   displayTimeElasped() {
-    return Math.floor(this.seconds/3600) + ':' + Math.floor(this.seconds/60)+ ':' + Math.floor(this.seconds % 60) 
+    return (Math.floor(this.seconds/3600).toLocaleString(undefined,{minimumIntegerDigits: 2})) + ':' + (Math.floor(this.seconds/60).toLocaleString(undefined,{minimumIntegerDigits: 2}))+ ':' + (Math.floor(this.seconds % 60).toLocaleString(undefined,{minimumIntegerDigits: 2}));
   }
 
   // Http Methods
