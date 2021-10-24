@@ -30,7 +30,7 @@
     font: bold;
     font-size: 24px;
     background-color: tomato; */
-    margin-left: 440px;
+    margin-left: 240px;
         font-family: 'Share Tech Mono', monospace;
         color: #ffffff;
         text-align: center;
@@ -45,12 +45,12 @@
 
 .full-container {
     margin-top: 100px;
-    margin-left: 200px;
-    width: 75%;
+    margin-left: 370px;
+    width: 50%;
 }
 
 .main-card {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .question-part {
@@ -72,6 +72,10 @@
 
 .question-part-header span {
     margin-right: 10px;
+}
+
+.image-container {
+    margin-left: 20px;
 }
 
 .collection-item {

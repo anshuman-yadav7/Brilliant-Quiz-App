@@ -17,12 +17,12 @@
                 <div class="question-part-header">
                     <span class="">{{quizService.qnProgress+1 + '.'}}</span>
                     <p>{{quizService.qns[quizService.qnProgress].Question}}</p>
+                    <div *ngIf="quizService.qns[quizService.qnProgress].ImageName!=null" class="image-container">
+                        <img class="center" [src]="quizService.rootUrl+'/Images/'+quizService.qns[quizService.qnProgress].ImageName"
+                        style="width:350px; height:200px">
+                    </div>
                 </div>
-
-              <div *ngIf="quizService.qns[quizService.qnProgress].ImageName!=null">
-                  <img class="center" [src]="quizService.rootUrl+'/Images/'+quizService.qns[quizService.qnProgress].ImageName"
-                  style="width:350px; height:200px">
-              </div>
+              
             </div>
 
             <div class="answer-container">
