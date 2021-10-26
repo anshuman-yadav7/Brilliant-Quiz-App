@@ -1,0 +1,77 @@
+.result-container {
+    border: 1px solid red;
+    margin-top: 100px;
+}
+
+.result-inside-container {
+    border: 1px green solid;
+}
+
+.upper-section {
+    border: 1px hotpink solid;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+.header-text {
+    text-align: center;
+}
+
+.marks-container {
+    border: 1px blue solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.marks-inner-container {
+    color: cornsilk;
+    font-family: 'Trocchi', serif;
+    font-weight: normal;
+}
+
+.marks-inner-container .participant-name {
+    padding: 5px;
+    font-size: 50px;
+}
+
+.marks-inner-container .marks {
+    padding: 5px;
+    font-size: 30px
+}
+
+.marks-inner-container .time-elasped {
+    padding: 5px;
+    font-size: 20px;
+}
+
+.submit-button {
+    /* color: chartreuse; */
+    padding: 10px;
+}
+
+.restart-button {
+    color: crimson;
+    background-color: white;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    align-items: center;
+    text-align: center;
+}
+.restart-button:hover {
+    background-color: crimson;
+    color: white;
+}
+
+.header-text {
+    color: white;
+}
+
+img {
+    width: 250px;
+    height : 250px;
+}
